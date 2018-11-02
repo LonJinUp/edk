@@ -1,0 +1,84 @@
+#section4 {
+  background-image: url("../imgs/background4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  #section4 .logos .page-title {
+    margin-bottom: 1rem; }
+  #section4 .logos .p5-content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto; }
+    #section4 .logos .p5-content .partner-logo {
+      width: 20%;
+      height: 5%;
+      object-fit: contain;
+      margin: 0.5em auto;
+      padding: 2%;
+      box-sizing: border-box;
+      align-self: center; }
+
+.investors {
+  background-image: url("../imgs/bg-investors.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  .investors .logos .page-title {
+    margin-bottom: 1rem; }
+  .investors .logos .p5-content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto; }
+    .investors .logos .p5-content a {
+      width: 20%;
+      height: 5%;
+      margin: 0.5em auto;
+      padding: 2%;
+      box-sizing: border-box;
+      align-self: center; }
+      .investors .logos .p5-content a img {
+        width: 100%; }
+
+@media screen and (min-width: 768px) {
+  /* .logos .title{
+      margin-bottom:3em;
+    } */ }
+
+@media screen and (max-width: 974px) {
+  #section4 .logos .p5-content .partner-logo, .investors .logos .p5-content a {
+    padding: 2em;
+    width: 30%; } }
+
+@media screen and (orientation: landscape) and (max-width: 830px) {
+  #section4 .logos .p5-content, .investors .logos .p5-content {
+    flex-direction: row;
+    justify-content: center; }
+    #section4 .logos .p5-content .page-title, .investors .logos .p5-content .page-title {
+      margin: 0; }
+    #section4 .logos .p5-content > .partner-logo, #section4 .logos .p5-content > a, .investors .logos .p5-content > .partner-logo, .investors .logos .p5-content > a {
+      box-sizing: border-box;
+      width: 20%;
+      padding: 1rem;
+      margin: 0; } }
+
+@media screen and (max-width: 640px) {
+  #section4 .logos .p5-content, .investors .logos .p5-content {
+    justify-content: center; }
+    #section4 .logos .p5-content > .partner-logo, #section4 .logos .p5-content > a, .investors .logos .p5-content > .partner-logo, .investors .logos .p5-content > a {
+      padding: 1.5em; } }
+
+@media screen and (max-width: 414px) {
+  #section4 .logos .p5-content .partner-logo, .investors .logos .p5-content a {
+    box-sizing: border-box;
+    width: 40%;
+    padding: .2rem 0; } }
+
+@media screen and (max-width: 360px) {
+  .page-title {
+    font-size: 1.5em; }
+  #p2-title {
+    font-size: 1.5em; } }

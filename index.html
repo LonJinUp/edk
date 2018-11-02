@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Nebula AI</title>
+	<meta name="author" content="Nebula AI" />
+	<meta name="description" content="The Third Generation Blockchain - Decentralized AI Blockchain" />
+	<meta name="keywords" content="The Third Generation Blockchain - Decentralized AI Blockchain" />
+	<meta name="Resource-type" content="document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome-all.min.css">	
+	<link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu-toggle.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="css/about.css" />
+	<link rel="stylesheet" type="text/css" href="css/technology.css" />
+	<link rel="stylesheet" href="css/team.css">
+	<link rel="stylesheet" href="css/partners.css">
+	<!-- <link rel="stylesheet" href="css/contact.css"> -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<!-- <link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff"> -->
+	<!-- Global site tag (gtag.js) - Google Analytics --> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118655606-1"></script> 
+	<script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'UA-118655606-1'); </script>
+</head>
+
+<body>
+
+	<div id="menuToggle">
+		<input type="checkbox">
+		<span></span>
+		<span></span>
+		<span></span>
+		<ul id="menuToggle-menu">
+		</ul>
+	</div>
+
+	<ul id="menu">
+		<!-- <li data-menuanchor="#">
+			<a href="https://whitelist.nebula-ai.network/kyc/#/login" class="translate-menu-login aLink">Login</a>
+		</li> -->
+		<!-- <li data-menuanchor="#">
+			<a href="https://www.nebula-ai.com/blog" class="translate-menu-blog aLink"></a>
+		</li> -->
+		<li data-menuanchor="About">
+			<a href="#About" class="translate-menu-about aLink">概览</a>
+		</li>
+		<!-- <li data-menuanchor="Strategy">
+			<a href="#Strategy" class="translate-menu-strategy aLink">Strategy</a>
+		</li> -->
+		<li data-menuanchor="Technology">
+			<a href="#Technology" class="translate-menu-tech aLink">解决方案</a>
+		</li>
+		<li data-menuanchor="Team">
+			<a href="#Team" class="translate-menu-team aLink">白皮书</a>
+		</li>
+		<li data-menuanchor="Advisors">
+			<a href="#Advisors" class="translate-menu-advisors aLink">关于我们</a>
+		</li>
+		<li data-menuanchor="Partners">
+			<a href="#Partners" class="translate-menu-partners aLink">联系我们</a>
+		</li>
+<!--		<li data-menuanchor="Investors">
+			<a href="#Investors" class="translate-menu-investors aLink">Investors</a>
+		</li>-->
+		<li data-menuanchor="Products" class="dropdown">
+			<!-- <a href="https://tokensale.nebula-ai.network/" class="translate-menu-token aLink">Token Sale</a> -->
+			<a class="translate-menu-whitepaper aLink">语言r</a>
+			<ul class="dropdown-menu whitepaper">
+				<li class="first"><a href="https://nebula-ai.com/whitepaper/NBAI_whitepaper_EN.pdf" target="_blank">English</a></li>
+				<li><a href="https://nebula-ai.com/whitepaper/NBAI_whitepaper_CN.pdf" target="_blank">简体</a></li>
+				<li><a href="https://nebula-ai.com/whitepaper/NBAI_whitepaper_RU_02.04.pdf" target="_blank">русский</a></li>  
+				<li><a href="https://nebula-ai.com/whitepaper/NBAI_whitepaper_JP.pdf" target="_blank">日本語</a></li>                          
+				<li><a href="https://nebula-ai.com/whitepaper/NBAI_whitepaper_ko.pdf" target="_blank">한국어</a></li>
+			</ul>
+		</li>
+		<li data-menuanchor="Products">
+			<a href="#Contact" class="translate-menu-contact aLink">Contact</a>
+		</li>
+		<li data-menuanchor="Lang" class="dropdown" data-lang="en">
+			<a class="translate-menu-language aLink">Language</a>
+			<ul class="dropdown-menu lang">
+				<li class="first">
+					<a href="javascript:setContent('en')">EN</a>
+				</li>
+				<li>
+					<a href="javascript:setContent('tc')">繁体</a>
+				</li>
+				<li>
+					<a href="javascript:setContent('ch')">简体</a>
+				</li>
+				<li>
+					<a href="javascript:setContent('ru')">RU</a>
+					<!-- "menuLanguage": "Язык" -->
+				</li>
+			</ul>
+			<!-- <select id="selectedLang">
+				<option value="1" selected> EN </option>
+				<option value="2"> 繁体 </option>
+				<option value="3"> 简体 </option>
+			</select> -->
+			<!-- <a href="javascript:void(0)" id="translate">中文</a> -->
+			<!-- <a id="translate" style="display: none">中文</a> -->
+		</li>
+	</ul>
+
+	<div id="fullpage">
+		<!--Home-->
+		<div class="section home" id="section0">
+			<video playsinline muted loop id="p1-bgvid">
+				<source src="imgs/nebula-video.mp4" type="video/mp4">
+			</video>
+			<!-- <a target="_blank" class="logoBtn translate-p1-explore" href="http://tokensale.nebula-ai.network/">EXPLORE NBAI</a> -->
+			<img class="page-logo" src="imgs/logo.png" />
+			<div id="p1-content">
+				<img id="p1-logo" src="imgs/logo.png" />
+				<div id="p1-title" class="page-title">
+					<span id="#p1-title-1">DKE</span>
+					<!-- <span>AI</span> -->
+				</div>
+				<p id="p1-first-line" class="translate-p1-title1">Descartes’s Kernel& Electronic——工业级人工智能区块链系统</p>
+				<p id="p1-second-line" class="translate-p1-title2">一个通过量子计算技术，提取人类个性化网络行为数据而生成人工智能助手的去中心化平台。</p>
+				<!-- Use a button to pause/play the video with JavaScript -->
+				<P style="display: block;">
+					<!--TODO DUPLICATE ID-->
+					<button class="button p1-button" onclick="window.open('https://www.youtube.com/watch?v=tLx2tE1YaMY')">
+						<i class="fa fa-play"></i><span class="translate-p1-video">VIEW VIDEO</span>
+					</button>
+					<button class="button p1-button" onclick="window.open('http://quantum.nebula-ai.network/')">
+						<i class="fa fa-cube"></i><span class="translate-p1-experience">VIEW DEMO</span>
+					</button>
+					<!-- <button class="button p1-button translate-p1-download">DOWNLOAD WHITEPAPER -->
+					<!-- <ul class="navigation">
+							<a class="main" href="#url">DOWNLOAD WHITEPAPER</a>
+							<li class="n1"><a href="#">En</a></li>
+							  <li class="n2"><a href="#">繁体</a></li>
+							  <li class="n3"><a href="#">简体</a></li>
+							  <li class="n4"><a href="#">Fr</a></li>
+							  <li class="n5"><a href="#">Es</a></li>
+					</ul> -->
+					<!-- </button> -->
+
+				</P>
+				<p>
+					<!--<ul class="icons">
+						<li>
+							<a href="https://github.com/nebulaai" target="_blank">
+								<i class="fab fa-github" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/nebula_ai" target="_blank">
+								<i class="fab fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/NebulaAI/" target="_blank">
+								<i class="fab fa-facebook-f" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://t.me/NebulaAICommunity" target="_blank">
+								<i class="fab fa-telegram" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UCWltsUAyiser4-_eLLGmpdg" target="_blank">
+								<i class="fab fa-youtube" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://medium.com/nebula-ai" target="_blank">
+								<i class="fab fa-medium-m" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.reddit.com/r/NBAI_Official/" target="_blank">
+								<i class="fab fa-reddit" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>-->
+				</p>
+			</div>
+			<!-- <img src="../imgs/firstPage.jpg" height="100%" alt="fullPage" /> -->
+		</div>
+		<!--About-->
+		<div class="section About" id="section8">
+			<a href="#Home">
+				<img class="page-logo" src="imgs/logo-2.png" />
+			</a>
+			<div class="about-bg"></div>
+			<div class="content">
+				<div class="text">
+					<p class="translate-p8-title page-title">具体描述</p>
+					<!-- <p class="translate-p8-subtitle subtitle">This video gives you the basic idea of our company</p> -->
+					<div class="underline"></div>
+					<div class="description">
+						<p class="translate-p8-desc1"></p>
+						<br />
+						<p class="translate-p8-desc2">
+						</p>
+						<br />
+						<p class="translate-p8-desc3"> 
+						</p>
+						<p style="line-height: 1.5rem;">
+							<br />我们已经进入了人工智能新纪元。
+							<br />在这里，我们可以用网络个人虚拟数据和行为创建人工智能助手
+							<br />我们把它叫做Descartes’s Kernel & Electronic (DKE)个性化人工智能。
+							<br />寻找区块链的下一匹黑马						
+							<br />DKE创立的愿景是——这世界上的每个人都应该有一个可以突破时空限制，帮他去表达、去体验、还可以帮他赚取收益的智能助手
+							<br />让我们的工作和生活更高效、更有趣。
+						</p>
+					</div>
+				</div>
+				<div class="video">
+					<button class="button p1-button" onclick="showVideo()">Watch Video</button>
+					<div class="aVideo">
+						<iframe type="text/html" width="640" height="385" src="https://www.youtube.com/embed/FbvftQ-0odY?loop=1" frameborder="0">
+						</iframe>
+						<!-- <span class="playBtn fa">&#xf04b;</span>
+						<video id="aboutVideo" controls="controls"><source src="https://www.youtube.com/embed/FbvftQ-0odY?playlist=FbvftQ-0odY&loop=1" type="video/mp4">
+							
+								Your browser does not support the video tag.
+						</video> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section Strategy" id="section1">
+			<a href="#Home">
+				<img class="page-logo" src="imgs/logo-2.png" />
+			</a>
+			<div>
+				<p id="p2-title" class="translate-p2-title page-title">WHAT WE DO</p>
+				<div class="p2-flex-box">
+					<div class="fade-sect">
+						<img class="p2-img" src="imgs/page2-img1.png" />
+						<p class="p2-text translate-p2-desc1">Converting your mining hash power to AI computing</p>
+					</div>
+					<div class="fade-sect">
+						<img class="p2-img" src="imgs/page2-img2.png" />
+						<p class="p2-text translate-p2-desc2">Building your decentralized AI application faster</p>
+					</div>
+					<div class="fade-sect">
+						<img class="p2-img" src="imgs/page2-img3.png" />
+						<p class="p2-text translate-p2-desc3">Costing 30% than Amazon GPU while training your algorithm</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Technology-->
+		<div class="section" id="section2">
+			<a href="#Home">
+				<img class="page-logo" src="imgs/logo.png" />
+			</a>
+			<div id="p3-content">
+				<div id="p3-title" class="translate-p3-title page-title">
+					Our Technology
+				</div>
+				<!-- <div class="translate-p3-tech"> Our Technology</div> -->
+				<p class="translate-p3-desc0">Creating AI applications on blockchain cannot be easier! With Nebula AI’s cutting-edge blockchain, you are able to focus
+					on the key business features. We provide you with on-chain payment, rental computing resources, decentralized service,
+					etc. </p>
+				<div class="paragraphs">
+					<div class="paragraph fade-sect">
+						<div class="thumb">
+							<a href="http://quantum.nebula-ai.network/" target="_blank">
+								<img src="imgs/quantai.png" alt="quantai icon" />
+							</a>
+						</div>
+						<div class="paraCont">
+							<h3 class="translate-p3-sub1">QUANT AI</h3>
+							<p class="translate-p3-desc1">Analyzing time series and training deep learning models based on AI algorithm to forecast the real-time trend and
+								implement automatic trading of cryptocurrencies. </p>
+						</div>
+					</div>
+
+					<div class="paragraph fade-sect">
+						<div class="thumb">
+							<a href="http://sentiment.nebula-ai.network/" target="_blank">
+								<img src="imgs/sentimenticon.png" alt="sentiment icon" />
+							</a>
+						</div>
+						<div class="paraCont">
+							<h3 class="translate-p3-sub2">SENTIMENT ANALYSIS</h3>
+							<p class="translate-p3-desc2">Building natural language processing algorithm on the blockchain to classify the polarity of a given text and extract
+								the attitude of the writer. All the sentences sent on the chain would be recorded.</p>
+						</div>
+					</div>
+					<div class="paragraph fade-sect">
+						<div class="thumb">
+							<img src="imgs/writingicon.png" alt="writing icon" />
+						</div>
+						<div class="paraCont">
+							<h3 class="translate-p3-sub3">WRITING RECOGNITION</h3>
+							<p class="translate-p3-desc3">Using multiple neural networks, Nebula AI receives and recognizes intelligible handwritten input such as characters,
+								words, and phrases.</p>
+						</div>
+					</div>
+				</div>
+				<P>
+					<button id="p3-button" class="button" onclick="window.open('http://quantum.nebula-ai.network/')">
+						<span class="translate-p1-experience">EXPERIENCE NOW</span>
+					</button>
+				</P>
+
+			</div>
+		</div>
+		<!--Team-->
+		<div class="section team" id="section3">
+			<a href="#Home">
+				<img class="page-logo" src="imgs/logo-2.png" />
+			</a>
+			<div class="content">
+				<p class="translate-p4-title page-title"></p>
+				<div class="scrollable">
+					<div class="team-members">
+						<div class="member fade-sect">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Charles.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-charles-cao name"></span>
+								<p>
+									<span class="translate-title-charles-cao"></span>
+									<a href='https://www.linkedin.com/in/charles-cao-09a79526/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-charles-cao'></div>
+						</div>
+						<div class="member fade-sect">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Ray.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-qinhui-lin name"></span>
+								<p>
+									<span class="translate-title-qinhui-lin"></span>
+									<a href='https://www.linkedin.com/in/qinhui-lin-05146030/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-qinhui-lin'></div>
+						</div>
+						<div class="member fade-sect">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/tengke-xiong.jpg.png' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-tengke-xiong name"></span>
+								<p >
+									<span class="translate-title-tengke-xiong"></span>
+									<a href='https://www.linkedin.com/in/tengke-xiong-45910028/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-tengke-xiong'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/yanyan-li.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-yanyan-li name"></span>
+								<p>
+									<span class="translate-title-yanyan-li"></span>
+									<a href='https://www.linkedin.com/in/yanyan-li-4a41aa64/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-yanyan-li'></div>
+						</div>
+
+						<!-- <div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/yanyan-li.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-songpingmai name"></span>
+								<p>
+									<span class="translate-title-songpingmain"></span>
+									<a href='https://www.linkedin.com/in/songping-mai-3b8a93a1/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-songpingmai'></div>
+						</div> -->
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Lv.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-yanpinglu name"></span>
+								<p>
+									<span class="translate-title-yanpinglu"></span>
+									<a href='https://www.linkedin.com/in/yanping-lu-aa9b1828/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-yanpinglu'></div>
+						</div>
+
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Tony.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-tong-pang name"></span>
+								<p>
+									<span class="translate-title-tong-pang"></span>
+									<a href='https://www.linkedin.com/in/tony-pang-69828a146/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-tong-pang'></div>
+						</div>
+						<!-- <div class="member">
+							<div class='img'>
+								<img class='member-image' src='/kaichen-zhang.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-kaichen-zhang name"></span>
+								<p>
+									<span class="translate-title-kaichen-zhang"></span>
+									<a href='https://www.linkedin.com/in/kaichen-zhang/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-kaichen-zhang'></div>
+						</div> -->
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/mingyue.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-mingyue name"></span>
+								<p>
+									<span class="translate-title-mingyue"></span>
+									<a href='https://www.linkedin.com/in/ming-yue-ba833012a/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-mingyue'></div>
+						</div>
+
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Richard.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-richard-yan name"></span>
+								<p>
+									<span class="translate-title-richard-yan"></span>
+									<a href='https://www.linkedin.com/in/richard-yan-78364b11/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-richard-yan'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/chengkun.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-chengkunche name"></span>
+								<p>
+									<span class="translate-title-chengkunche"></span>
+									<a href='https://www.linkedin.com/in/chengkunche' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-chengkunche'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Chi.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-chi-zhang name"></span>
+								<p>
+									<span class="translate-title-chi-zhang"></span>
+									<a href='https://www.linkedin.com/in/ch-zhang/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-chi-zhang'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/shogan.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-shogan name"></span>
+								<p>
+									<span class="translate-title-shogan"></span>
+									<a href='https://www.linkedin.com/in/shogan-li/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-shogan'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Leo.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-shitao name"></span>
+								<p>
+									<span class="translate-title-shitao"></span>
+									<a href='https://www.linkedin.com/in/shitao-li-quebec/?ts=1530025603178' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-shitao'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Rick.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-yaolu name"></span>
+								<p>
+									<span class="translate-title-yaolu"></span>
+									<a href='https://www.linkedin.com/in/yao-lu-798098b9' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-yaolu'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Panghong.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-hongpang name"></span>
+								<p>
+									<span class="translate-title-hongpang"></span>
+									<a href='https://www.linkedin.com/in/hong-pang-22a05013b/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-hongpang'></div>
+						</div>
+						
+
+						<!-- <div class="member">
+							<div class='img'>
+								<img class='member-image' src='/pin-zhou.png' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-pin-zhou name"></span>
+								<p>
+									<span class="translate-title-pin-zhou"></span>
+									<a href='https://www.linkedin.com/in/pin-zhou-93342384/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-pin-zhou'></div>
+						</div> -->
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Cao.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-yicao name"></span>
+								<p>
+									<span class="translate-title-yicao"></span>
+									<a href='https://www.linkedin.com/in/caoyichris2013/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-yicao'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Xiaojun.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-xiaojunwen name"></span>
+								<p>
+									<span class="translate-title-xiaojunwen"></span>
+									<a href='https://www.linkedin.com/in/xiao-jun-wen-6a3b9b95/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-xiaojunwen'></div>
+						</div>
+
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Sidi.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-sidi-shen name"></span>
+								<p >
+									<span class="translate-title-sidi-shen"></span>
+									<a href='https://www.linkedin.com/in/sidi-shen-413742126/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-sidi-shen'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Ivan.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-ivannonveiller name"></span>
+								<p >
+									<span class="translate-title-ivannonveiller"></span>
+									<a href='https://www.linkedin.com/in/ivan-nonveiller-7201a9102/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-ivannonveiller'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Alecsa.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-alecsa-tabisaura name"></span>
+								<p >
+									<span class="translate-title-sidi-shen"></span>
+									<a href='https://www.linkedin.com/in/alecsa-tabisaura-50872bb6' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-alecsa-tabisaura'></div>
+						</div>
+						
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/newTeam/Ke.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-cocoma name"></span>
+								<p >
+									<span class="translate-title-cocoma"></span>
+									<a href='https://www.linkedin.com/in/ke-ma-818a32163/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-cocoma'></div>
+						</div>
+						
+
+						<!-- <div class="member">
+							<div class='img'>
+								<img class='member-image' src='/avatar-f.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-mengyuan-zhang name"></span>
+								<p>
+									<span class="translate-title-mengyuan-zhang"></span>
+									<a href='https://www.linkedin.com/in/mengyuan-zhang-09b80a72/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-mengyuan-zhang'></div>
+						</div> -->
+						<!-- <div class="member">
+							<div class='img'>
+								<img class='member-image' src='/min-liang.jpg' />
+							</div>
+							<div class='member-name name'>
+								<span class="translate-name-min-liang"></span>
+								<p >
+									<span class="translate-title-min-liang"></span>
+									<a href='https://www.linkedin.com/in/min-liang-a96534120/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-min-liang'></div>
+						</div> 
+					
+
+						<div class="member empty">
+							<div class='img'>
+							</div>
+							<div class='member-name'>
+							</div>
+							<div class='member-desc'></div>
+						</div>-->
+						<div class="member empty">
+							<div class='img'>
+							</div>
+							<div class='member-name'>
+							</div>
+							<div class='member-desc'></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="carousel-menu">
+				</div>
+			</div>
+		</div>
+
+		<div class="section advisor">
+			<a href="#Home">
+				<img class="page-logo" src="imgs/logo-2.png" />
+			</a>
+			<div class="content">
+				<p class="translate-p9-title page-title"></p>
+				<div class="scrollable">
+					<div class="team-members">
+						<div class="member  fade-sect">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/louiscleroux.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-louis-cleroux name"></span>
+								<p>
+									<span class="translate-title-louis-cleroux"></span>
+									<a href='https://www.linkedin.com/in/lcleroux/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-louis-cleroux'></div>
+						</div>
+						<div class="member fade-sect">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/zhenhualin.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-zhenhua-lin name"></span>
+								<p>
+									<span  class="translate-title-zhenhua-lin"></span>
+									<a href='https://www.linkedin.com/in/linulysses/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-zhenhua-lin'></div>
+						</div>
+						<div class="member fade-sect">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/liuyan.png' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-liu-yan name"></span>
+								<p>
+									<span  class="translate-title-liu-yan"></span>
+									<a href='http://users.encs.concordia.ca/~liu/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								
+								</p>
+							</div>
+							<div class='member-desc translate-desc-liu-yan'></div>
+						</div>
+
+						
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/xunshi.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-xun-shi name"></span>
+								<p>
+									<span class="translate-title-xun-shi"></span>
+									<a href='https://www.linkedin.com/in/xunshi/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								
+								</p>
+							</div>
+							<div class='member-desc translate-desc-xun-shi'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/yuguan.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-yu-guan name"></span>
+								<p >
+									<span class="translate-title-yu-guan"></span>
+									<a href='https://www.linkedin.com/in/yuguan/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								
+								</p>
+							</div>
+							<div class='member-desc translate-desc-yu-guan'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/bin-zhu.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-bin-zhu name"></span>
+								<p >
+									<span class="translate-title-bin-zhu"></span>
+									<a href='https://www.linkedin.com/in/bin-zhu-3169b766/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								
+								</p>
+							</div>
+							<div class='member-desc translate-desc-bin-zhu'></div>
+						</div>
+						<!-- <div class="member">
+							<div class='img'>
+								<img class='member-image' src='/adamallouba.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-adam-allouba name"></span>
+								<p>
+									<span class="translate-title-adam-allouba"></span>
+									<a href='https://www.linkedin.com/in/adamallouba/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-adam-allouba'></div>
+						</div> -->
+
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/douglas-leahey.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-douglas-leahey name"></span>
+								<p >
+									<span class="translate-title-douglas-leahey"></span>
+									<a href='https://www.linkedin.com/in/douglas-leahey-9b76591/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								
+								</p>
+							</div>
+							<div class='member-desc translate-desc-douglas-leahey'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/jakebarralet.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-jake-barralet name"></span>
+								<p >
+									<span class="translate-title-jake-barralet"></span>
+									<a href='https://www.linkedin.com/in/barralet/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								
+								</p>
+							</div>
+							<div class='member-desc translate-desc-jake-barralet'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/fevensthomas.jpg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-thomas-fevens name"></span>
+								<p >
+									<span class="translate-title-thomas-fevens"></span>
+									<a href='https://www.linkedin.com/in/thomas-fevens-09b3bba5/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-thomas-fevens'></div>
+						</div>
+						<div class="member">
+							<div class='img'>
+								<img class='member-image' src='imgs/advisor/alanli.jpeg' />
+							</div>
+							<div class='member-name'>
+								<span class="translate-name-alanli name"></span>
+								<p >
+									<span class="translate-title-alanli"></span>
+									<a href='https://www.linkedin.com/in/alan0li/' target='_blank' class="linkedin"><i class='fab fa-linkedin-in'></i></a>
+								</p>
+							</div>
+							<div class='member-desc translate-desc-alanli'></div>
+						</div>
+						<div class="member empty">
+							<div class='img'>
+								<!-- <img class='member-image' src='/bin-zhu.jpg' /> -->
+							</div>
+							<div class='member-name'>
+								<!-- <span class="translate-name-bin-zhu"></span>
+								<p class="translate-title-bin-zhu"></p> -->
+							</div>
+							<div class='member-desc'></div>
+						</div>
+						<div class="member empty">
+							<div class='img'>
+								<!-- <img class='member-image' src='/bin-zhu.jpg' /> -->
+							</div>
+							<div class='member-name'>
+								<!-- <span class="translate-name-bin-zhu"></span>
+								<p class="translate-title-bin-zhu"></p> -->
+							</div>
+							<div class='member-desc'></div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-menu">
+				</div>
+			</div>
+		</div>
+		<!--partner-->
+		<div class="section partners" id="section4">
+			<a href="#Home">
+				<img class="page-logo" src="imgs/logo-2.png" />
+			</a>
+			<!-- <div class="content">	
+			</div> -->
+			<div class="logos">
+				<p class="translate-p5-title page-title">OUR PARTNERS</p>
+				<div class="p5-content">
+					<img class="partner-logo fade-sect" src="imgs/partners/mcgill-1.png" />
+					<img class="partner-logo fade-sect" src="imgs/partners/Concordia_Summit_logo.png" />				
+					<!-- <img class="partner-logo fade-sect" src="imgs/partners/SRED.png" /> -->
+					<img class="partner-logo fade-sect" src="imgs/partners/YES.png" />
+					<img class="partner-logo fade-sect" src="imgs/partners/beepay.png" />
+					<img class="partner-logo fade-sect" src="imgs/partners/wehash.png" />
+					<img class="partner-logo fade-sect" src="imgs/partners/express.png" />
+					<img class="partner-logo fade-sect" src="imgs/partners/timechain.png" />
+					<img class="partner-logo fade-sect" src="imgs/partners/apigm.png" />
+					<img class="partner-logo fade-sect" src="imgs/investors/cooix.png" />
+					<img class="partner-logo fade-sect" src="imgs/partners/sharpeye.png" />
+				</div>
+			</div>
+		</div>
+		<!--investors-->
+		<div class="section investors">
+			<a href="#Home">
+				<img class="page-logo" src="imgs/logo-2.png" />
+			</a>
+			<div class="logos">
+				<p class="translate-investors-title page-title">Strategic Investors</p>
+				<div class="p5-content">
+					
+					<a href="http://consensuscapital.ca" target="_blank"><img class="partner-logo fade-sect" src="imgs/investors/consensus.png" /></a>
+					<a href="https://mwpartners.io/" target="_blank"><img class="partner-logo fade-sect" src="imgs/investors/mw.png" /></a>
+					<a href="https://crosschain.vc/" target="_blank"><img class="partner-logo fade-sect" src="imgs/investors/crosschain.png" /></a>
+					<a href="#Investors" ><img class="partner-logo fade-sect" src="imgs/investors/interchain.png" /></a>
+					<a href="#Investors" ><img class="partner-logo fade-sect" src="imgs/investors/supermobile.png" /></a>
+					<a href="https://fengshui.capital/" target="_blank"><img class="partner-logo fade-sect" src="imgs/investors/fengshui.png" /></a>
+					<a href="http://www.yuejiafund.com/" target="_blank"><img class="partner-logo fade-sect" src="imgs/investors/yuejiafund.png" /></a>				
+					<a href="#Investors" ><img class="partner-logo fade-sect" src="imgs/investors/bitblock.png" /></a>				
+					<a href="#Investors" ><img class="partner-logo fade-sect" src="imgs/investors/vdCapital.png" /></a>									
+				</div>
+			</div>
+		</div>
+		<!-- contact -->
+		<div class="section contact">
+			<a href="#Home">
+				<img class="page-logo footer-logo" src="imgs/logo.png" />
+			</a>
+			<div class="p6-company-name page-title">
+				什么是DKE
+			</div>
+			<div class="p6-office-label translate-p6-office">
+				
+			</div>
+			<div class="p6-contactus-label translate-p6-contactus">
+				把人类行为数据化，赋予AI生命和思考，让它帮你表达、帮你体验、还可以帮你赚取收益。
+			</div>
+			<div class="p6-email">
+				<a class='link' href='mailto:contact@nebula-ai.com'></a>
+			</div>
+			<!-- <a target="_blank" href="http://tokensale.nebula-ai.network/" class="p6-explore-btn translate-p6-explore">
+				Explore NBAI
+			</a> -->
+			<div class="p6-link-icons">
+				<a href="https://github.com/nebulaai" target="_blank">
+					<i class="fab fa-github" aria-hidden="true"></i>
+				</a>
+				<a href="https://twitter.com/nebula_ai" target="_blank">
+					<i class="fab fa-twitter" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.facebook.com/NebulaAI/" target="_blank">
+					<i class="fab fa-facebook-f" aria-hidden="true"></i>
+				</a>
+				<a href="https://t.me/NebulaAICommunity" target="_blank">
+					<i class="fab fa-telegram" aria-hidden="true"></i>
+				</a>
+
+				<a href="https://www.youtube.com/channel/UCWltsUAyiser4-_eLLGmpdg" target="_blank">
+					<i class="fab fa-youtube" aria-hidden="true"></i>
+				</a>
+				<a href="https://medium.com/nebula-ai" target="_blank">
+					<i class="fab fa-medium-m" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.reddit.com/r/NBAI_Official/" target="_blank">
+					<i class="fab fa-reddit" aria-hidden="true"></i>
+				</a>
+
+			</div>
+
+			<div class="p6-copyright"><a href="privacy.html" target="_blank" style="color: white;text-transform: lowercase;">Privacy Policy</a>&nbsp;
+				&#x24B8;Nebula AI. 2018
+			</div>
+
+		</div>
+
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+</body>
+
+</html>
